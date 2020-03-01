@@ -32,5 +32,5 @@ acceCSV = np.c_[acce_x_array, acce_y_array, acce_z_array, android_x_array , andr
 #データフレームを作成
 df_y = pd.DataFrame(acceCSV, columns=['Acce_X', 'Acce_Y', 'Acce_Z', 'Android_X', 'Android_Y', 'Android_Z'])
 #CSVファイルとして出力
-print('Save CSVFileName')
+print('write CSVFile')
 df_y.to_csv(fileName, index=False)
